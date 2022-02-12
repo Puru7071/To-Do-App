@@ -8,7 +8,7 @@
     <link rel="shorcut icon" type="image/x-icon" href="./images/fevion.svg">
     <script src="https://kit.fontawesome.com/22406f9d4d.js" crossorigin="anonymous"></script>
     <link href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
     <div id = "outerSection">
@@ -27,7 +27,7 @@
             <div id="Field3">
                 <div id="part1">
                     <label for="inputField3">Due-Date <i class="fas fa-level-down-alt" style="position: relative; top: 5px;"></i></label><br>
-                    <input type="date" placeholder="Select Date" id="inputField3" required>
+                    <input type="date" placeholder="Select Date" id="inputField3" required name="deadline">
                 </div>
                 <div id = "part2">
                     <label for="inputField4">Category <i class="fas fa-level-down-alt" style="position: relative; top: 5px;"></i></label><br>
@@ -54,34 +54,51 @@
             
         </form>
 
-        <h3 style="margin-left: 20px; font-family: monospace; font-weight: 900;">Pending Tasks: 2</h3>
+        <h3 style="margin-left: 20px; font-family: monospace; font-weight: 900;">Pending Tasks: <%= number%></h3>
         <p class="toDoTaskHeading"><i class="fas fa-bell-on"></i> Tasks To Do:</p>
 
-        <div class="taskCard">
+        <% for(let i of tasksToDo){%>
+            <div class="taskCard">
+                <div class="tickBox">
+                    <i class="far fa-square fa-2x tick"></i>
+                </div>
 
-            <div class="innerCard1">
-                <p class="taskName">
-                    To Do HomeWork
-                    <span class="displayInfo">
-                        <span class="infoDiv">
-                            Lorem ipsum is placeholder text commonly used in the graphic.
+                <div class="innerCard1">
+                    <p class="taskName">
+                        <span class="displayInfo">
+                            <span class="infoDiv">
+                                <%= i.Description %>
+                            </span>
+                            <%= i.Name%> <i class="fas fa-info-circle"></i>
                         </span>
-                        <i class="fas fa-info-circle"></i>
-                    </span>
-                </p>
-                <p class="date"><i class="far fa-calendar-alt"></i> 12/02/2022</p>
+                    </p>
+                    <p class="date"><i class="far fa-calendar-alt"></i> <%= i.deadline%></p>
+                </div>
+    
+               <%if(i.category == "Personal"){%>
+                    <div class="catMentioner text-center" style="background-color: #f15bb5;">
+                        <%= i.category%>
+                    </div>
+                <%}%>
+                <%if(i.category == "Home"){%>
+                    <div class="catMentioner text-center" style="background-color: #8338ec;">
+                        <%= i.category%>
+                    </div>
+                <%}%>
+                <%if(i.category == "Work"){%>
+                    <div class="catMentioner text-center" style="background-color: #3a86ff;">
+                        <%= i.category%>
+                    </div>
+                <%}%>
+                
+                <div class="deleteBtn">
+                    <a href = "/delete-task/<%= i._id%>"><i class="fas fa-trash-alt fa-2x" ></i></a>
+                </div>
             </div>
 
-            <div class="catMentioner text-center" style="background-color: #b388eb;">
-                Work
-            </div>
-            
-            <div class="deleteBtn">
-                <a href = "/delete-task"><i class="fas fa-trash-alt fa-2x" ></i></a>
-            </div>
-        </div>
+        <% } %>
 
-        <script type="text/javascript" src="./script.js"></script>
+        <script type="text/javascript" src="./js/script.js"></script>
     </div>
 </body>
 </html>

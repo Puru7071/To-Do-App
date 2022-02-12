@@ -30,4 +30,22 @@ for(let i = 0 ; i < socialMediaIcons.length ; i += 1){
         
     }) ; 
 }
+// var tick1 =  document.getElementsByClassName("far fa-square fa-2x") ; 
+// var tick2 = document.getElementsByClassName("far fa-check-square fa-2x") ; 
+
+// for(let i = 0 ; i < tick1.length ; i += 1){
+//     tick1[i].addEventListener("click" , function(event){
+//         tick1[i].setAttribute("class" , "far fa-check-square fa-2x") ;
+//         tick2 = document.getElementsByClassName("far fa-check-square fa-2x") ; 
+//         tick1.splice(i , 1) ; 
+//     }) ; 
+// }
+
+// for(let i = 0 ; i < tick2.length ; i += 1){
+//     tick2[i].addEventListener("click" , function(event){
+//         tick2[i].setAttribute("class" , "far fa-square fa-2x") ; 
+//         tick1 =  document.getElementsByClassName("far fa-square fa-2x") ; 
+//         tick2.splice(i , 1) ; 
+//     }) ;
+// }
 })() ; 
