@@ -1,3 +1,4 @@
+(function(){
 console.log("Script Loaded!!") ; 
 
 var socialMediaIcons = document.getElementsByClassName("socialMediaIcons") ; 
@@ -35,3 +36,4 @@ for(let i = 0 ; i < socialMediaIcons.length ; i += 1){
         
     })
 }
+})() ; 
