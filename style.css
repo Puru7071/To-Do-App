@@ -1,0 +1,84 @@
+body{
+    background-color: #A2AEBB;
+}
+
+#outerSection{
+    width: 50vw;
+    height: auto ;
+    margin-left : 25vw ; 
+    border: 10px solid white;
+    background: #FED99B;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.text-center{
+    text-align: center;
+}
+
+#heading{
+    font-size: 2rem;
+    color: white;
+    font-weight: 900;
+    font-family: monospace;
+    padding : 30px 0px 30px 0px ; 
+    border-bottom: 9px solid white;
+    background-color: #1AC8ED;
+    margin-top: 0px;
+}
+
+#Field1 , #Field2 , #Field3{
+    padding-left: 20px;
+    padding-bottom: 15px;
+    font-family: monospace;
+    
+    width: 100%;
+}
+#Field2 , #Field3{
+    padding-top: 20px;
+}
+#part1 , #part2{
+    width: 50%;
+    height: 100% ; 
+}
+#Field3{
+    display: flex;
+    flex-wrap: no wrap;
+}
+#Field1 label , #Field2 label , #part1 label , #part2 label{
+    font-weight: 900;
+    color: #495057;
+    font-size: 1.09rem;
+}
+#Field1 input , #Field2 input , #part1 input , #part2 select{
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #1AC8ED;
+    outline: none;
+    margin-top: 10px;
+    height: 30px ; 
+    width: 90%;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 4px;
+}
+#part2 select{
+    height: 40px
+}
+#Field1 input::placeholder , #Field2 input::placeholder , #part1 input::placeholder , #part2 select::placeholder{
+    color: white;
+}
+#Field1 input:focus , #Field2 input:focus , #part1 input:focus , #part2 select:focus{
+    border: 3px solid #ffbe0b;
+    background-color: #ffbe0b ; 
+    border-radius: 4px;
+}
+#btn1{
+    margin-left: 20px ;
+    font-size: 1.125rem;
+    height: 50px;
+    width: 150px;
+}

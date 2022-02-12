@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO Do App</title>
+    <script src="https://kit.fontawesome.com/22406f9d4d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id = "outerSection">
+        <p class="text-center" id = "heading"><i class="far fa-clipboard-list-check"></i> To Do App</p>
+
+
+        <form action="/" method="GET">
+            <div id="Field1">
+                <label for="inputField1">Task Name <i class="fas fa-level-down-alt" style="position: relative; top: 5px;"></i></label><br>
+                <input type="text" name="Task_Name" id="inputField1" placeholder="Tell me, what's the task? " required>
+            </div>
+            <div id="Field2">
+                <label for="inputField2">Description <i class="fas fa-level-down-alt" style="position: relative; top: 5px;"></i></label><br>
+                <input type="text" name="Task_Description" id="inputField2" placeholder="Tell me, something about the task..." required>
+            </div>
+            <div id="Field3">
+                <div id="part1">
+                    <label for="inputField3">Due-Date <i class="fas fa-level-down-alt" style="position: relative; top: 5px;"></i></label><br>
+                    <input type="date" placeholder="Select Date" id="inputField3" required>
+                </div>
+                <div id = "part2">
+                    <label for="inputField4">Category <i class="fas fa-level-down-alt" style="position: relative; top: 5px;"></i></label><br>
+                    <select id="inputField4" required name="category" >
+                        <option>Select Category</option>
+                        <option>Personal</option>
+                        <option>Work</option>
+                        <option>Home</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" id="btn1">
+                <i class="fas fa-plus-circle"></i> Create Task
+            </button>
+        </form>
+    </div>
+</body>
+</html>
