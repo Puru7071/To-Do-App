@@ -20,18 +20,12 @@ for(let i = 0 ; i < socialMediaIcons.length ; i += 1){
         if(i == 3){
             socialMediaIcons[i].style.color = "#f7f400" ; 
         }
-        if(i == 4){
-            document.getElementById("changeMe").setAttribute("src" , "./images/after.png") ; 
-        }
+       
         return ; 
     }) ; 
 
     socialMediaIcons[i].addEventListener("mouseout" , function(event){
         event.stopImmediatePropagation() ; 
-        if(i == 4){
-            document.getElementById("changeMe").setAttribute("src" , "./images/capture.png") ; 
-            return ; 
-        }
         socialMediaIcons[i].style.color = "#f1faee" ; 
         
     }) ; 

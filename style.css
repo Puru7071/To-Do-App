@@ -95,6 +95,7 @@ body{
 }
 
 #socialMedia{
+    position: relative;
     margin-right: 60px;
     display: flex;
     flex-wrap: no wrap ;
@@ -106,13 +107,7 @@ body{
     color : #f1faee;
 }
 #socialMedia a i {
-    font-size: 2rem;
-}
-#GFGlogo{  
-    overflow: hidden;  
-    margin-top: 3px;
-    height: 25px;
-    width: 30px;
+    font-size: 3rem;
 }
 .toDoTaskHeading{
     margin-left: 20px;
@@ -128,6 +123,7 @@ body{
     position: relative;
     top: -50px ;
     margin-left: 20px;
+    margin-bottom: 10px;
     height: 100px;
     width: 93%;
     border-radius: 30px;
@@ -140,9 +136,8 @@ body{
     margin-top: 10px ; 
     margin-left: 10px;
     padding-left: 10px;
-    width: 60%;
+    width: 50%;
     box-sizing: border-box;
-    /* border: 2px solid black;     */
 }
 .taskName{
     color: white;
@@ -183,15 +178,23 @@ body{
     width: 250px ;
     background-color: #36393b;
     position: absolute;
-    right: 10px;
-    top: 30px;
+    top: -5px;
+    right: -180px;
     color: white;
     padding: 10px;
     border-radius: 5px;
     font-weight: 900;
+    font-size: 0.8rem;
     display: none;
 }
 .displayInfo:hover >.infoDiv{
     display: block;
+}
+.deleteBtn{
+    margin-top: 30px;
+    margin-right: 20px;   
+}
+.deleteBtn a{
+    color: #f02d3a;
 }
 

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO Do App</title>
+    <title>To Do App</title>
+    <link rel="shorcut icon" type="image/x-icon" href="./images/fevion.svg">
     <script src="https://kit.fontawesome.com/22406f9d4d.js" crossorigin="anonymous"></script>
     <link href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -48,7 +49,6 @@
                     <a class="socialMediaIcons" href="https://www.instagram.com/puru_bhargava_/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a class="socialMediaIcons" href="https://github.com/Puru7071" target="_blank"><i class="fab fa-github-square"></i></a>
                     <a class="socialMediaIcons" href="https://www.snapchat.com/add/pbh21758" target="_blank"><i class="fab fa-snapchat-square"></i></a>
-                    <a class="socialMediaIcons"  target = "_blank" id="GFGlogo" href="https://auth.geeksforgeeks.org/user/purubhargava011/profile"><img src="./images/Capture.png" height="100%" width="100%" id="changeMe"></a>
                 </div>
             </div>
             
@@ -58,22 +58,27 @@
         <p class="toDoTaskHeading"><i class="fas fa-bell-on"></i> Tasks To Do:</p>
 
         <div class="taskCard">
+
             <div class="innerCard1">
-                <p class="taskName">To Do HomeWork</p>
+                <p class="taskName">
+                    To Do HomeWork
+                    <span class="displayInfo">
+                        <span class="infoDiv">
+                            Lorem ipsum is placeholder text commonly used in the graphic.
+                        </span>
+                        <i class="fas fa-info-circle"></i>
+                    </span>
+                </p>
                 <p class="date"><i class="far fa-calendar-alt"></i> 12/02/2022</p>
             </div>
+
             <div class="catMentioner text-center" style="background-color: #b388eb;">
                 Work
             </div>
-            <div class="displayInfo">
-                <div class="infoDiv">
-                    Lorem ipsum is placeholder text commonly used in the graphic, print, and 
-                    publishing industries for previewing layouts and visual mockups.
-                </div>
-                
-                <i class="fas fa-info-circle fa-2x"></i>
-            </div>
             
+            <div class="deleteBtn">
+                <a href = "/delete-task"><i class="fas fa-trash-alt fa-2x" ></i></a>
+            </div>
         </div>
 
         <script type="text/javascript" src="./script.js"></script>
