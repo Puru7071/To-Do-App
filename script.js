@@ -34,6 +34,6 @@ for(let i = 0 ; i < socialMediaIcons.length ; i += 1){
         }
         socialMediaIcons[i].style.color = "#f1faee" ; 
         
-    })
+    }) ; 
 }
 })() ; 
