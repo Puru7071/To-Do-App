@@ -46,6 +46,7 @@ body{
 #Field3{
     display: flex;
     flex-wrap: no wrap;
+    justify-content: space-between
 }
 #Field1 label , #Field2 label , #part1 label , #part2 label{
     font-weight: 900;
@@ -77,8 +78,34 @@ body{
     border-radius: 4px;
 }
 #btn1{
-    margin-left: 20px ;
-    font-size: 1.125rem;
-    height: 50px;
-    width: 150px;
+    font-size: 1.21rem;
+    height: 60px;
+    width: 180px;
+    background-color: #fef9ef;
+    color: #0a9396;
+    font-family: monospace;
+    font-weight: 900 ;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+#btn1:hover{
+    background-color: #f0ead2;
+}
+
+#socialMedia{
+    margin-right: 60px;
+    display: flex;
+    flex-wrap: no wrap ;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px solid black;
+    width: 200px;
+}
+#socialMedia a{
+    color : white;
+}
+#socialMedia a i {
+    font-size: 2rem;
 }
