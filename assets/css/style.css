@@ -109,6 +109,37 @@ body{
 #socialMedia a i {
     font-size: 3rem;
 }
+.deadLineBar{
+    background-color: #ccff33;
+    padding-left: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 97%;
+    max-height: 120px;
+    height: auto ; 
+    margin-left: 6px;
+}
+#closestTaskHeading{
+    color:red;
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 1.25rem;
+    position: relative;
+    top: -55px; left: 50px;
+}
+#calenderImage{
+    position: relative;
+    top: -60px;
+    left :8px
+}
+#deadlineDate{
+    color: red;
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 1rem ; 
+    position: relative;
+    top: -100px; left: 50px;
+}
 .toDoTaskHeading{
     margin-left: 20px;
     font-family: monospace;
@@ -116,29 +147,24 @@ body{
     font-size: 2.5rem;
     font-weight: 900;
     position: relative;
-    top: -30px;
+    top: 10px;
 }
 .taskCard{
     background-color: #3bceac;
     position: relative;
-    top: -50px ;
+    top: -10px ;
     left: 10px;
     margin-bottom: 10px;
-    height: 100px;
+    height: 80px;
     width: 98%;
     border-radius: 30px;
     font-family: monospace;
     display: flex;
     justify-content: space-between;
 }
-.tickBox{
-    margin-top: 35px;
-    margin-left: 20px;
-    color: white;
-}
+
 .innerCard1{
     height: 80% ; 
-    margin-top: 10px ; 
     margin-left: 10px;
     padding-left: 10px;
     width: auto;
@@ -159,7 +185,7 @@ body{
     top: -30px;
 }
 .catMentioner{
-    margin-top: 20px;
+    margin-top: 15px;
     margin-right: 20px;
     height: 50px ; 
     width: auto;
@@ -195,7 +221,7 @@ body{
     display: block;
 }
 .deleteBtn{
-    margin-top: 30px;
+    margin-top: 20px;
     margin-right: 20px;   
 }
 .deleteBtn a{

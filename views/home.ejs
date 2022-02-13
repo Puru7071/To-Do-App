@@ -53,16 +53,33 @@
             </div>
             
         </form>
-
-        <h3 style="margin-left: 20px; font-family: monospace; font-weight: 900;">Pending Tasks: <%= number%></h3>
+        <div class="deadLineBar">
+            <img src="./images/alert-triangle.svg">
+            <% if(closestTask != null){%>
+                <p id="closestTaskHeading">
+                    Tighten Your Shoelace Deadline is on way : <%= closestTask%>
+               </p>
+            <%}else{%>
+                <p id="closestTaskHeading">
+                    Bingo! So Far no Deadlines
+               </p>
+            <%}%>
+            <img src="./images/calendar.svg" id="calenderImage">
+            <%if(closestTask !=null){%>
+                <p id="deadlineDate">
+                    <%= closestDate%>
+                </p>
+            <%}else{%>
+                <p id="deadlineDate">
+                    No Deadlines
+                </p>
+            <%}%>
+        </div>
+        
         <p class="toDoTaskHeading"><i class="fas fa-bell-on"></i> Tasks To Do:</p>
-
+        <h3 style="margin-left: 20px; margin-top: -10px; font-family: monospace; font-weight: 900;">Pending Tasks: <%= number%></h3>
         <% for(let i of tasksToDo){%>
             <div class="taskCard">
-                <div class="tickBox">
-                    <i class="far fa-square fa-2x tick"></i>
-                </div>
-
                 <div class="innerCard1">
                     <p class="taskName">
                         <span class="displayInfo">
