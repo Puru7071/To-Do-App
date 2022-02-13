@@ -2,9 +2,15 @@
     "use strict"
     console.log("Script Loaded!!") ; 
 
+    document.getElementById("btn1").addEventListener("click" , function(event){
+        if(new Date() > new Date(document.getElementById("inputField3").value)){
+            window.alert("Date should be greater than current date !!") ; 
+            return ; 
+        }
+    }) ; 
+
     var socialMediaIcons = document.getElementsByClassName("socialMediaIcons") ; 
     console.log(socialMediaIcons) ; 
-
     for(let i = 0 ; i < socialMediaIcons.length ; i += 1){
         socialMediaIcons[i].addEventListener("mouseover" , function(event){
             event.stopPropagation() ; 

@@ -1,6 +1,9 @@
 const taskList = require("../models/TaskSchema")
 
 module.exports.addTask = function(request , response){
+    if(new Date() > new Date(request.body.deadline)){
+        return response.redirect("back") ; 
+    }
     taskList.create({
         Name : request.body.Task_Name , 
         Description : request.body.Task_Description , 

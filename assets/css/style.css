@@ -8,7 +8,7 @@ body{
     margin-left : 20vw ; 
     border: 10px solid white;
     background: #FED99B;
-    border-radius: 20px;
+    border-radius: 100px;
     padding-bottom: 200px;
     overflow: hidden;
     display: flex;
@@ -114,9 +114,8 @@ body{
     padding-left: 10px;
     margin-top: 20px;
     border-radius: 20px;
-    width: 97%;
-    max-height: 100px;
-    height: auto ; 
+    width: 95%;
+    height: 110px;
     margin-left: 6px;
 }
 #closestTaskHeading{
@@ -125,7 +124,8 @@ body{
     font-weight: 900;
     font-size: 1.25rem;
     position: relative;
-    top: -55px; left: 50px;
+    top: -58px; left: 50px;
+    width: 96%;
 }
 #calenderImage{
     position: relative;
@@ -188,8 +188,7 @@ body{
     margin-top: 15px;
     margin-right: 20px;
     height: 50px ; 
-    width: auto;
-    min-width: 120px;
+    width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,5 +247,108 @@ body{
 }
 .deleteBtn a{
     color: #ffffff;
+}
+.deleteBtn a:hover{
+    color: red;
+}
+@media screen and (max-width: 1100px){
+    #outerSection{
+        width: 70vw;
+        margin-left: 15vw;
+    }
+}
+@media screen and (max-width: 900px){
+    #outerSection{
+        position: relative;
+        width: 92vw;
+        margin-left: 1vw;
+    }
+}
+@media screen and (max-width: 750px){
+    #outerSection{
+        margin-left: 0px ; 
+    }
+}
+@media screen and (max-width: 620px){
+    #Field1 input , #Field2 input , #part1 input , #part2 select{
+        font-size: 1.25rem;
+    }
+}
+@media screen and (max-width: 572px){
+    #closestTaskHeading{
+        font-size: 1rem;
+    }
+    #deadlineDate{
+        font-size: 0.8rem;
+    }
+    .deadLineBar{
+        margin-left: 2px;
+    }
+    #btn1 {
+        font-size: 1rem;
+        height: 50px;
+        width: 150px;
+    }
+    .taskName {
+        font-size: 1rem;
+        top: -1px;
+    }
+    .date {
+        font-size: 0.8rem;
+        top: -14px;
+    }
+    .deleteBtn {
+        font-size: 0.7rem;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .catMentioner {
+        margin-top: 25px;
+        margin-right: 21px;
+        height: 30px;
+        font-size: 1rem;
+        color: white;
+    }
+    .taskCard{
+        height: 100px ; 
+    }
+    .minutesHeading {
+        font-size: 1rem;
+    }
+    .dropDownContainer{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width : 400px){
+    #outerSection{
+        border-radius: 0px;
+        border: none;
+        width: 100vw;
+        margin: 0px;
+        left: -10px;
+        top: -10px;
+    }
+    #Field1 input, #Field2 input, #part1 input, #part2 select{
+        font-size: 0.9rem;
+    }
+    #btn1{
+        font-size: 0.9rem;
+        padding: 0px;
+    }
+    #socialMedia a i {
+        font-size: 2rem;
+    }
+    .deadLineBar{
+        border-radius: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+    .taskCard{
+        left: 5px;
+    }
+    .catMentioner{
+        font-size: 0.8rem;
+        width: 80px !important;
+    }
 }
 
