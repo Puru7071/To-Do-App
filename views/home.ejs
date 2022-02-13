@@ -18,11 +18,11 @@
         <form action="/add-Task" method="POST">
             <div id="Field1">
                 <label for="inputField1">Task Name <i class="fas fa-level-down-alt" style="position: relative; top: 5px;"></i></label><br>
-                <input type="text" name="Task_Name" id="inputField1" placeholder="Tell me, what's the task? " required>
+                <input maxlength="20" type="text" name="Task_Name" id="inputField1" placeholder="Tell me, what's the task? " required>
             </div>
             <div id="Field2">
                 <label for="inputField2">Description <i class="fas fa-level-down-alt" style="position: relative; top: 5px;"></i></label><br>
-                <input type="text" name="Task_Description" id="inputField2" placeholder="Tell me about the task..." required>
+                <input type="text" maxlength="80" name="Task_Description" id="inputField2" placeholder="Anything to remember about task, Tell me..." required>
             </div>
             <div id="Field3">
                 <div id="part1">
@@ -82,16 +82,26 @@
             <div class="taskCard">
                 <div class="innerCard1">
                     <p class="taskName">
-                        <span class="displayInfo">
-                            <span class="infoDiv">
-                                <%= i.Description %>
-                            </span>
-                            <%= i.Name%> <i class="fas fa-info-circle"></i>
-                        </span>
+                        <%= i.Name%> 
                     </p>
                     <p class="date"><i class="far fa-calendar-alt"></i> <%= i.deadline%></p>
                 </div>
+
+                <div class="dropDown" data-isExpanded="false">
+                    <p class="contract">Expand</p> <img src="./images/dropdown.svg" class="arrow">
+                </div>
+
+                <div class="dropDownContainer">
+                    <p class="minutesHeading">
+                        <img src="./images/edit.svg">
+                        <span class="head1">Minute of the Task:</span>
+                    </p>
+                    <p>
+                        <%= i.Description%>
+                    </p>
+                </div>
     
+                
                <%if(i.category == "Personal"){%>
                     <div class="catMentioner text-center" style="background-color: #f15bb5;">
                         <%= i.category%>

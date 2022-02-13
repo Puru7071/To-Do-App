@@ -1,17 +1,6 @@
 (function(){
+    "use strict"
     console.log("Script Loaded!!") ; 
-    var tasks = null ; 
-
-    taskList.find({} , function(error , docs){
-        if(error){
-            console.log("Internal Error !!") ; 
-            return ; 
-        }
-        tasks = docs ; 
-        return ;   
-    }) ; 
-
-    console.log(tasks) ; 
 
     var socialMediaIcons = document.getElementsByClassName("socialMediaIcons") ; 
     console.log(socialMediaIcons) ; 
@@ -43,4 +32,28 @@
         }) ; 
     }
 
+    var dropDown = document.getElementsByClassName("dropDown") ; 
+
+    for(let i = 0 ; i < dropDown.length ; i += 1){
+        dropDown[i].addEventListener("click" , function(event){
+            if(dropDown[i].getAttribute("data-isExpanded") == "false"){
+                document.getElementsByClassName("taskCard")[i].style.height = "280px" ; 
+                document.getElementsByClassName("contract")[i].innerHTML = "Contract" ; 
+                document.getElementsByClassName("arrow")[i].setAttribute("src" , "./images/dropup.svg") ; 
+                document.getElementsByClassName("dropDownContainer")[i].style.display = "block" ;
+                document.getElementsByClassName("dropDownContainer")[i].style.bottom = "50px" ;
+                document.getElementsByClassName("dropDownContainer")[i].style.left = "4%" ;
+                dropDown[i].setAttribute("data-isExpanded" ,"true") ; 
+            }
+
+            else if(dropDown[i].getAttribute("data-isExpanded") == "true"){
+                document.getElementsByClassName("taskCard")[i].style.height = "80px" ; 
+                document.getElementsByClassName("contract")[i].innerHTML = "Expand" ; 
+                document.getElementsByClassName("arrow")[i].setAttribute("src" , "./images/dropdown.svg") ; 
+                document.getElementsByClassName("dropDownContainer")[i].style.display = "none" ;
+                dropDown[i].setAttribute("data-isExpanded" ,"false") ;
+            }
+            
+        }) ; 
+    }
 })() ; 

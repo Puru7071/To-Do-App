@@ -8,8 +8,8 @@ body{
     margin-left : 20vw ; 
     border: 10px solid white;
     background: #FED99B;
-    border-radius: 5px;
-    padding-bottom: 10px;
+    border-radius: 20px;
+    padding-bottom: 200px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -110,12 +110,12 @@ body{
     font-size: 3rem;
 }
 .deadLineBar{
-    background-color: #ccff33;
+    background-color: #edf2f4;
     padding-left: 10px;
     margin-top: 20px;
     border-radius: 20px;
     width: 97%;
-    max-height: 120px;
+    max-height: 100px;
     height: auto ; 
     margin-left: 6px;
 }
@@ -167,7 +167,7 @@ body{
     height: 80% ; 
     margin-left: 10px;
     padding-left: 10px;
-    width: auto;
+    width: 70%;
     box-sizing: border-box;
 }
 .taskName{
@@ -198,30 +198,52 @@ body{
     border-radius: 20px;
     color: white;
 }
-.displayInfo{
-    margin-top: 30px;
-    color: white;
-    margin-right: 10px ;
+.dropDown{
     cursor: pointer;
-}
-.infoDiv{
-    height: 250px ; 
-    width: 250px ;
-    background-color: #36393b;
     position: absolute;
-    top: -5px;
+    bottom: 0px;
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 40px ; 
     color: white;
-    padding: 10px;
-    border-radius: 5px;
+    font-size: 1.13rem;
+    font-family: monospace;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no wrap;
+    justify-content: space-between;
+    align-items: center;
     font-weight: 900;
-    font-size: 0.8rem;
-    display: none;
 }
-.displayInfo:hover >.infoDiv{
-    display: block;
+.dropDownContainer{
+    background-color: #2b2d42;
+    position: absolute;
+    bottom: -150px;
+    left: 4%;
+    width: 93%;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: none;
+    color: white;
+    font-family: monospace;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.minutesHeading{
+    font-size: 1.12rem;
+    color: white;
+    font-family: monospace;
+    font-weight: 900;
+}
+.head1{
+    position: relative;
+    top: -7px;
 }
 .deleteBtn{
-    margin-top: 20px;
+    margin-top: 24px;
     margin-right: 20px;   
 }
 .deleteBtn a{
