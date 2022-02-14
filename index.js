@@ -19,7 +19,7 @@ app.use(express.static("assets")) ;
 // sets ups the location of static files which will be accessed by rendered page.
 
 app.use(express.urlencoded()) ; 
-// converts the request.body's value to JSON.
+// Converts the request.body's value to JSON.
 
 app.use("/" , require("./routes/mainRouter")) ; 
 // any API hit will be directed to this router where furthure dealing ins made.
