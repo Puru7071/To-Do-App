@@ -1,3 +1,5 @@
+// This file is all about setting up the schema of document and creating document for database and exporting it.
+
 const { Module } = require("module");
 const mongoose = require("mongoose") ; 
 

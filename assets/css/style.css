@@ -331,7 +331,8 @@ body{
         font-size: 1.1rem;
     }
 }
-/* Responsiveness for screen below and equal to 400px. This is for smartphone screens */
+/* Responsiveness for screen below and equal to 400px. 
+This is for smartphone screens */
 @media screen and (max-width : 400px){
     #outerSection{
         border-radius: 0px;

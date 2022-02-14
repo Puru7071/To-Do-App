@@ -1,5 +1,7 @@
+// including the document for database created by schema.
 const taskList = require("../models/TaskSchema")
 
+// incase of API hit = "/delete-task" router directs to use file function exported
 module.exports.deleteTasks = function(request , response){
     taskList.findByIdAndDelete(request.params.id , function(error){
         if(error){

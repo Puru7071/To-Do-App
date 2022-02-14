@@ -1,5 +1,8 @@
+// including the document for database created by schema.
 const taskList = require("../models/TaskSchema") ; 
 
+// this function help us to find the most closest deadline and we are able to 
+// use this due to property of closures.
 function findMinDate(Tasks){
     var taskDate = new Date("2080-12-12") ; 
     var taskName = null ; 
@@ -14,6 +17,8 @@ function findMinDate(Tasks){
 }
 
 
+//incase of API hit = "/" router directs to use file function exported which renders to home.ejs file 
+//with the necessary data required by ejs
 
 module.exports.renderHomePage = function(request , response){
     taskList.find({}, function (error, Tasks) {
