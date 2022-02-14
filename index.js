@@ -1,7 +1,8 @@
 // These are the necessary modules required to setup the server and database.
 const express = require("express") ; 
 const path = require("path") ; 
-const port = 7777 ; // this is Port Number.
+// this is Port Number.
+const port = 7777 ; 
 
 const db = require("./config/mongoose") ; 
 

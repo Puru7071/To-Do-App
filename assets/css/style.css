@@ -14,6 +14,13 @@ body{
     display: flex;
     flex-direction: column;
 }
+/*Below is styling of the head image.*/
+#headImage{
+    height: 50px ; 
+    width: 50px;
+    position: relative;
+    top: 10px; left: -20px;
+}
 /* Making common property class for future use. */
 .text-center{
     text-align: center;
