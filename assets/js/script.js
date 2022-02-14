@@ -1,7 +1,9 @@
+// Used the IIFE approach for writting the code.
 (function(){
     "use strict"
     console.log("Script Loaded!!") ; 
 
+    // This is event that make sure that date is not less than the current date.
     document.getElementById("btn1").addEventListener("click" , function(event){
         if(new Date() > new Date(document.getElementById("inputField3").value)){
             window.alert("Date should be greater than current date !!") ; 
@@ -9,6 +11,8 @@
         }
     }) ; 
 
+
+    // This event that handles the on hover event for social media icons.
     var socialMediaIcons = document.getElementsByClassName("socialMediaIcons") ; 
     console.log(socialMediaIcons) ; 
     for(let i = 0 ; i < socialMediaIcons.length ; i += 1){
@@ -38,8 +42,10 @@
         }) ; 
     }
 
-    var dropDown = document.getElementsByClassName("dropDown") ; 
 
+    // This is for the contract and expand animation of the task cards that is used to display the minutes 
+    // of the task that are added by the user.
+    var dropDown = document.getElementsByClassName("dropDown") ; 
     for(let i = 0 ; i < dropDown.length ; i += 1){
         dropDown[i].addEventListener("click" , function(event){
             if(dropDown[i].getAttribute("data-isExpanded") == "false"){
@@ -58,8 +64,7 @@
                 document.getElementsByClassName("arrow")[i].setAttribute("src" , "./images/dropdown.svg") ; 
                 document.getElementsByClassName("dropDownContainer")[i].style.display = "none" ;
                 dropDown[i].setAttribute("data-isExpanded" ,"false") ;
-            }
-            
+            }    
         }) ; 
     }
 })() ; 
